@@ -65,25 +65,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button AddBtn = findViewById(R.id.AddBtn);
-        AddBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String [] arr = getResources().getStringArray(R.array.ColorHair);
-                //Toolbar toolbar = findViewById(R.id.toolbar);
-
-                gender = findViewById(GenderView.getCheckedRadioButtonId());
-
-                color = findViewById(R.id.IdColorHair);
-                String text = arr[color.getSelectedItemPosition()];
-                int Age = Integer.parseInt(ageView.getText().toString());
-                String genderStr =  gender.getText().toString();
-                user = new User (FIOView.getText().toString(), Age, HeightView.getText().toString(), WeightView.getText().toString(), text, gender.getText().toString()  );
-            }
-
-
-        });
-
-
     }
 }

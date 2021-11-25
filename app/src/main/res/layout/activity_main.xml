@@ -86,11 +86,11 @@
 
     <Button
         android:id="@+id/SaveText"
-        android:layout_width="106dp"
-        android:layout_height="51dp"
+        android:layout_width="118dp"
+        android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:text="@string/save"
+        android:text="Добавить"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_first"
         app:layout_constraintHorizontal_bias="0.183"
@@ -101,34 +101,18 @@
 
     <Button
         android:id="@+id/Next"
-        android:layout_width="106dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="Next"
+        android:layout_width="124dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:text="Показать список"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_first"
         app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.634"
+        app:layout_constraintVertical_bias="0.106"
         tools:ignore="UnknownId" />
-
-    <Button
-        android:id="@+id/AddBtn"
-        android:layout_width="106dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="Add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_first"
-        app:layout_constraintHorizontal_bias="0.183"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.349"
-        tools:ignore="UnknownId" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
