@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/IdColorHair"
+        android:layout_width="156dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="280dp"
+        android:entries="@array/ColorHair"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/IdFIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/FIO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/Idage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="25"
+        app:layout_constraintStart_toStartOf="@+id/IdFIO"
+        app:layout_constraintTop_toBottomOf="@+id/IdFIO" />
+
+    <EditText
+        android:id="@+id/Idheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Height"
+        app:layout_constraintStart_toStartOf="@+id/Idage"
+        app:layout_constraintTop_toBottomOf="@+id/Idage" />
+
+    <EditText
+        android:id="@+id/IdWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Weight"
+        app:layout_constraintStart_toStartOf="@+id/Idheight"
+        app:layout_constraintTop_toBottomOf="@+id/Idheight" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="239dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdColorHair">
+
+        <RadioButton
+            android:id="@+id/Man"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Man" />
+
+        <RadioButton
+            android:id="@+id/Woman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Woman" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/SaveText"
+        android:layout_width="106dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_first"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.106"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="106dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_first"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.634"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="106dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_first"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.349"
+        tools:ignore="UnknownId" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

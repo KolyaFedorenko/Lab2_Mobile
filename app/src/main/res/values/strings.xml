@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lab.1</string>
+    <string name="next">next</string>
+    <string name="FIO">FIO</string>
+    <string name="Age">Age</string>
+    <string name="Height">Height</string>
+    <string name="Weight">Weight</string>
+    <string name="Man">Man</string>
+    <string name="Woman">Woman</string>
+    <string name="save">save</string>
+    <string name="previos">previos</string>
+
+</resources>
